@@ -14,7 +14,7 @@ function App() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.get('http://localhost:5000/api/capacity', {
+      const response = await axios.get('http://localhost:5001/api/capacity', {
         params: formData,
       });
       setVenues(response.data);
